@@ -1,0 +1,22 @@
+<div class="d-flex flex-wrap flex-row">
+
+  @for (book of books; track $index) {
+        <div class="text-center  p-2 m-5 shadow bg-body rounded" style="width: 28%">
+            <div class="card-body">
+              <h4 class="card-title">{{book.name}}</h4>
+              <h6 class="card-text">{{book.category}}</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Book Year: {{book.year}}</li>
+              <li class="list-group-item">Star: {{book.star}}</li>
+              <li class="list-group-item fs-4">{{book.author}}</li>
+            </ul>
+            <div class="card-body">
+              <button class=" btn btn-danger"  (click)="addBook(book)">Sepete Ekle</button>
+            </div>
+          </div>
+        }
+        <!-- figma miro -->
+        
+        
+</div>

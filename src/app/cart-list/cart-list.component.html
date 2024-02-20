@@ -1,0 +1,29 @@
+<div class= "p-5" style="background-color: beige;">
+    <h2 style="text-align: center;">SEPET</h2>
+<div class="m-5 p-5 bg-body rounded shadow-sm ">
+    <h6 class="border-bottom pb-2 mb-0">Suggestions</h6>
+    <div class="d-flex flex-wrap flex-row">
+
+        @for (book of cartList; track $index) {
+              <div class="text-center p-3 m-4" style="width: 28%; border: 1px solid rgb(199, 181, 181)">
+                  <div class="card-body">
+                    <h4 class="card-title">{{book.name}}</h4>
+                    <h6 class="card-text">{{book.category}}</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Book Year: {{book.year}}</li>
+                    <li class="list-group-item">Star: {{book.star}}</li>
+                    <li class="list-group-item fs-4">{{book.author}}</li>
+                  </ul>
+                 </div>
+              }
+              <!-- figma miro -->
+              
+              
+      </div>
+ 
+    <small class="d-block text-end mt-3">
+      <a href="#">All suggestions</a>
+    </small>
+  </div>
+</div>

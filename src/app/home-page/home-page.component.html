@@ -1,0 +1,5 @@
+<app-navbar [categories]="categories" (categoryName)="setBookForCategories($event)" (allCategory)="allBook()"></app-navbar>
+<button class=" btn btn-danger m-3"  (click)="sepeteGit()">Sepete git</button>
+<mat-icon [matBadge]="cartList.lenght" matBadgeColor="warn">home</mat-icon>
+<app-book-card-list [books]="filteredBooks" (addToCart)="addCart($event)"></app-book-card-list>
+
